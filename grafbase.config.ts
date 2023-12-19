@@ -8,6 +8,7 @@ const pg = connector.Postgres('pg', {
 
 g.datasource(pg)
 
+// @ts-ignore
 const user = g.type('User', {
   id: g.id(),
   name: g.string().optional(),
